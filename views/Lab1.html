@@ -1,0 +1,91 @@
+<head>
+        <meta charset="utf-8">
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="assets/Lab1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+        <!-- <script type="text/javascript" src="JS/micro.js"></script> -->
+        <style>
+            h2{
+              margin: 0 auto;
+              min-width: 0;
+              width: auto;
+              display: table;
+              background-color: aqua;
+            }
+          </style>
+    </head>
+<body>  
+<form action="Includes/addNewFood.inc.php" method="POST">
+    <div class="image question container-md p-3 my-3 border bg-light "><a href="https://www.uottawa.ca/en" target="_blank"> <img src="assets/landscape.jpg" width="100px" alt="Uottawa home page" style="border-radius: 5px;"></a>
+    <br>
+    <br>
+        <span>The picture is a link to the University of Ottawa website</span>
+    </div>
+
+    <div class="text_question question container-md p-3 my-3 border bg-light ">
+        <span>Do you like this university website?</span> <br> <br>
+        <textarea name="like" rows="7" cols="40" placeholder="Plese enter your answer here"></textarea>
+    </div>
+
+    <div class="radio_button question container-md p-3 my-3 border bg-light ">
+        <span>Please specify your gender</span> <br> <br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </div>
+
+    <div class="single_selection question container-md p-3 my-3 border bg-light ">
+        <label for="flaws">Do you have any flaws of this website to share?</label>
+        <select name="flaws" id="cars">
+            <option value="layout">Layout</option>
+            <option value="colours">Colours</option>
+            <option value="nothing">Nothing</option>
+        </select>
+    </div>
+
+    <div class="text_question question container-md p-3 my-3 border bg-light ">
+        <span>Would you happen to have any comments on the website?</span> <br> <br>
+        <textarea name="comment" rows="7" cols="40" placeholder="Plese enter your comments here"></textarea>
+    </div>
+    <div name="field" class="single_selection question container-md p-3 my-3 border bg-light ">
+        <label for="flaw">Select which fields of study do you enjoy?</label><br>
+        <input type="checkbox" id="Math" name="field" value="Math">
+        <label for="Math"> Math</label><br>
+        <input type="checkbox" id="Science" name="field" value="Science">
+        <label for="Science"> Science</label><br>
+        <input type="checkbox" id="Other" name="field" value="Other">
+        <label for="Other">Other</label>
+    </div>
+
+    <div class="radio_button question container-md p-3 my-3 border bg-light ">
+        <span>How likely are you to recommend this page?</span> <br> <br>
+
+        <input type="radio" id="Never" name="recommendation" value="Never">
+        <label for="Never">Never</label><br>
+        <input type="radio" id="Maybe" name="recommendation" value="Maybe">
+        <label for="Maybe">Maybe</label><br>
+        <input type="radio" id="100%" name="recommendation" value="100%">
+        <label for="100%">100%</label>
+        <br>
+        
+    </div>
+    <button type="submit" id="bb">Submit</button>
+    
+    
+</form>
+<script src="/assets/action.js"></script>
+</body>
+<footer>
+    <p>Author: Marco Najem</p>
+    <p>300009101</p>
+</footer>
